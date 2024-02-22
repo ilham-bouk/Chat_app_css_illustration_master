@@ -1,0 +1,197 @@
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: hsl(270, 20%, 96%);
+}
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 25vh;
+}
+p, span {
+    font-size: 10px;
+}
+.popular {
+    position: absolute;
+    width: 400px;
+    height: 90vh;
+    border-radius: 0 0 300px 300px;
+    background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    top: 0;
+    left: -50px;
+    z-index: -1;
+}
+.gray {
+    position: absolute;
+    width: 320px;
+    height: 90vh;
+    border-radius: 250px 0px 0 0;
+    background-color: hsl(270deg 15.24% 94.6%);
+    top: 10vh;
+    right: 0;
+    z-index: -1;
+}
+article {
+    width: 250px;
+    height: 505px;
+    border: 10px solid white;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 7px 7px 19px 0px rgb(17 12 46 / 12%);
+}
+article .info {
+    position: relative;
+    padding: 25px 10px 8px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: white;
+    border-radius: 5px;
+}
+article .info > span {
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 15px;
+    width: 50%;
+}
+article .info img {
+    width: 22px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0 10px;
+}
+article .info .name {
+    width: 100%;
+}
+article .info .name h5 {
+    margin: 0;
+}
+article .info .name span {
+    color: hsl(276, 100%, 81%);
+}
+article .page .left p {
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(270deg 11.62% 93.04%);
+    padding: 8px 10px;
+    border-radius: 10px 10px 10px 5px;
+    max-width: 140px;
+    margin: 10px;
+}
+article .page .right {
+    justify-content: flex-end;
+    display: grid;
+}
+article .page .right p {
+    color: hsl(271, 15%, 43%);
+    background-color: white;
+    border-radius: 10px 10px 5px;
+    max-width: 140px;
+    margin: 5px 10px 5px auto;
+    padding: 8px 10px;
+    width: fit-content;
+    box-shadow: 2px 2px 10px 0px rgb(17 12 46 / 7%);
+}
+article .page .right .images {
+    margin-left: auto;
+    margin-right: 5px;
+}
+article .page .right .images img {
+    width: 40px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+article .page .left .prix {
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    padding: 10px 15px 10px 10px;
+    border-radius: 10px 10px 10px 5px;
+    color: hsl(276, 100%, 81%);
+    max-width: 150px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+article .page .left .prix i {
+    font-size: 14px;
+}
+article .page .left .prix span:last-of-type {
+    margin-left: auto;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+article .page .send {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 5px 5px 15px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+article .page .send span {
+    color: hsl(206, 6%, 79%);
+}
+article .page .send i {
+    background-color: hsl(271, 36%, 24%);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+aside {
+    max-width: 500px;
+}
+aside h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 40px;
+}
+aside p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: hsl(270, 7%, 64%);
+}
+@media (max-width: 872px) {
+    main {
+        flex-direction: column;
+        gap: 10vh;
+        height: fit-content;
+    }
+    .popular {
+        width: 50%;
+        left: 0;
+        border-radius: 0 0 300px;
+        height: 60vh;
+    }
+    .gray {
+        width: 50%;
+        bottom: 0;
+        top: auto;
+        height: 60vh;
+    }
+    article {
+        margin-top: 80px;
+    }
+    aside {
+        max-width: 330px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 900px) {
+    main {
+        gap: 10vh;
+    }
+}
