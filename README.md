@@ -36,7 +36,7 @@ I do not have access to the Figma sketch so the design is not pixel perfect.
 
 ### Links
 
-- Solution URL: [Solution URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/frontend-mentor-challenge-chat-app-css-illustration-master-Wxz5gnGiC2)
 - Live Site URL: [Live Site](https://ilham-bouk.github.io/Chat_app_css_illustration_master/)
 
 ## My process
@@ -61,7 +61,7 @@ I do not have access to the Figma sketch so the design is not pixel perfect.
 
 ## Acknowledgments
 
-A big thank you to anyone providing feedback on [my solution](). It definitely helps to find new ways to code and find easier solutions!
+A big thank you to anyone providing feedback on [my solution](https://www.frontendmentor.io/solutions/frontend-mentor-challenge-chat-app-css-illustration-master-Wxz5gnGiC2). It definitely helps to find new ways to code and find easier solutions!
 
 **Happy coding!** ☺️🚀
 
